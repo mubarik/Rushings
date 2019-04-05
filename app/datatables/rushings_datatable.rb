@@ -48,7 +48,7 @@ class RushingsDatatable < ApplicationDatatable
 	end
 
 	def columns
-		%w(player team)
+		%w(player team pos attg att yrds avg ydsg td lng first firstpercent twentyplus fortyplus fum)
 	end 
 
 end
