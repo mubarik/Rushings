@@ -1,0 +1,92 @@
+<%= form_with(model: rushing, local: true) do |form| %>
+  <% if rushing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rushing.errors.count, "error") %> prohibited this rushing from being saved:</h2>
+
+      <ul>
+      <% rushing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :player %>
+    <%= form.text_field :player %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team %>
+    <%= form.text_field :team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pos %>
+    <%= form.text_field :pos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :attg %>
+    <%= form.text_field :attg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :att %>
+    <%= form.text_field :att %>
+  </div>
+
+  <div class="field">
+    <%= form.label :yrds %>
+    <%= form.text_field :yrds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avg %>
+    <%= form.text_field :avg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ydsg %>
+    <%= form.text_field :ydsg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :td %>
+    <%= form.text_field :td %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lng %>
+    <%= form.text_field :lng %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first %>
+    <%= form.text_field :first %>
+  </div>
+
+  <div class="field">
+    <%= form.label :firstpercent %>
+    <%= form.text_field :firstpercent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twentyplus %>
+    <%= form.text_field :twentyplus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fortyplus %>
+    <%= form.text_field :fortyplus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fum %>
+    <%= form.text_field :fum %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

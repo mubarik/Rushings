@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rushings</h1>
+
+<%= content_tag :table, role: :datatable, data: { url: rushings_path(format: :json)} do %>  
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Pos</th>
+      <th>Attg</th>
+      <th>Att</th>
+      <th>Yrds</th>
+      <th>Avg</th>
+      <th>Ydsg</th>
+      <th>Td</th>
+      <th>Lng</th>
+      <th>First</th>
+      <th>Firstpercent</th>
+      <th>Twentyplus</th>
+      <th>Fortyplus</th>
+      <th>Fum</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+  </tbody>
+
+<% end %>
+
+<br>
+
+<%= link_to 'New Rushing', new_rushing_path %>
