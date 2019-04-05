@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Installation and running this solution
+setup rails 5.1+ env
+1) clone the repo
+2) cd to directory and run bundle install
+2) run rails db:create
+3) run rails db:migrate
+3) run rake loadrushing:load_rushings
+4) rails s
